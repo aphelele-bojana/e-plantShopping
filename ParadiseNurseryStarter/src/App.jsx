@@ -3,22 +3,19 @@ import AboutUs from "./components/AboutUs";
 import ProductList from "./components/ProductList";
 
 function App() {
-  const [page, setPage] = useState("home");
+  const [showProductList, setShowProductList] = useState(false);
 
   return (
-    <div>
-      {page === "home" && (
-        <div className="landing">
-          <h1>Paradise Nursery 🌿</h1>
-          <p>Bring nature into your home</p>
+    <div className="background-image">
+      {!showProductList ? (
+        <div className="app-container">
+          <h1>Welcome to Paradise Nursery</h1>
 
-          <button onClick={() => setPage("products")}>
+          <button onClick={() => setShowProductList(true)}>
             Get Started
           </button>
         </div>
-      )}
-
-      {page === "products" && (
+      ) : (
         <>
           <AboutUs />
           <ProductList />
