@@ -1,1 +1,44 @@
-body{background-image:url('background.jpg');background-size:cover;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Landing page */
+.landing {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product list */
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Cart */
+.cart-item {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+}
